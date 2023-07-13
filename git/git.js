@@ -57,8 +57,15 @@
 
 // Git Checkout
 // --------------
-// Description: Switches to a different branch.
-// Usage: git checkout <branch>
+// Description: Switches to the newly created branch.
+// Usage: git checkout <branch-name>
+// Example: git checkout feature-branch
+
+// Git Checkout (-b)
+// --------------
+// Description: Creates a new branch and switches to it in one step.
+// Usage: git checkout -b <branch-name>
+// Example: git checkout -b feature-branch
 
 // Git Merge
 // --------------

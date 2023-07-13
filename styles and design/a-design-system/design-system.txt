@@ -1,0 +1,36 @@
+2. Identify the Brand’s Alphabet
+The visual language that designers will use should be based on the alphabet of a brand. The alphabet includes brand
+ identity (brand and product values) and brand language (colors, fonts, shapes, animations, voice, and tone). 
+ Define a brand’s identity, as well as its language, by reviewing the brand’s guidelines and interviewing stakeholders, then refer to this information when you work on design principles and style guides.
+
+ https://cssstats.com/
+
+ Brad Frost’s Atomic Design methodology
+
+ 4. Define Design Principles
+
+5. Create Component/Pattern Library
+
+It’s recommended to develop components that are not tied to a single-use case but can be reused in multiple contexts. To be reusable and scalable, components need to be the following:
+
+Modular. Modular components are self-contained — they don’t have any dependencies. Modularity helps to create reusable and interchangeable components. 
+Composable. It’s possible to create new components by combining existing components.
+Customizable. It’s possible to adjust and extend components to make them work in a variety of contexts.
+
+Material Design by Google
+
+-------------------------------------------------------------------------------------------
+
+Accessibility
+Accessible design enables users with diverse abilities to navigate, understand, and enjoy a UI.
+
+Adaptive design
+Adaptive layouts react to input from users, devices, and screen elements. Material guidance describes how to design for variable screen sizes, from phones and tablets, to desktop and beyond.
+
+Design tokens
+Tokens store style values like colors and fonts so the same values can be used across designs, code, tools, and platforms.
+
+Interaction states
+States are visual indicators used to communicate the status of a component or interactive element.
+
+--------------------------------------------------------------------------------------------

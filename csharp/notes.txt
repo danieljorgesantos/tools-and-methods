@@ -1,0 +1,10 @@
+ 
+ convert string to number
+ 
+int number = int.Parse(str); // Convert the string to an integer
+return number;
+
+string originalString = "Hello, World!";
+string replacedString = originalString.Replace('o', 'x');
+Console.WriteLine(replacedString); // Output: Hellx, Wxrld!
+

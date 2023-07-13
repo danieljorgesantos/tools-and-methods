@@ -1,0 +1,26 @@
+{
+  "name": "rxjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node rxjs.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieljorgesantos/rxjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieljorgesantos/rxjs/issues"
+  },
+  "homepage": "https://github.com/danieljorgesantos/rxjs#readme",
+  "dependencies": {
+    "@reactivex/rxjs": "^6.6.7",
+    "rxjs": "^7.8.1"
+  }
+}

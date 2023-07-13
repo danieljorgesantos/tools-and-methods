@@ -20,10 +20,20 @@
 // Description: Adds a file to the staging area, preparing it for a commit.
 // Usage: git add <file>
 
+// Git Add All
+// --------------
+// Description: Adds a file to the staging area, preparing it for a commit.
+// Usage: git add .
+
 // Git Commit
 // --------------
 // Description: Creates a new commit with the staged changes and attaches a descriptive message.
-// Usage: git commit -m "message"
+// Usage: git commit -m "added"
+
+// Git Commit (-a)
+// --------------
+// Description: Creates a new commit with all modified and deleted files automatically staged, and attaches a descriptive message.
+// Usage: git commit -a -m "added"
 
 // Git Status
 // --------------

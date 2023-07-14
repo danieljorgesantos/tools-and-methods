@@ -17,8 +17,9 @@ imports: [
     HttpClientModule,
 ]
 
+// under the app folder in angular, create a _services folder
+
 // creating a service in angular:
 ng generate service service-name
-
 
 

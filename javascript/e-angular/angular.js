@@ -111,23 +111,23 @@ export class ExampleComponent {
 
 src 
 |-- app
-| |-- components
+| |-- _components
 | | |-- component1
 | | | |-- component1.component.ts
 | | | |-- component1.component.html
 | | | |-- component1.component.scss
 | | | |-- component1.component.spec.ts
 | | |
-| |-- services
+| |-- _services
 | | |-- service1
 | | | |-- service1.service.ts
 | | | |-- service1.service.spec.ts
 | | |
 | |
-| |-- models
+| |-- _models
 | | |-- model1.ts
 | |
-| |-- modules
+| |-- _modules
 | | |-- module1
 | | | |-- module1.component.ts
 | | | |-- module1.component.html

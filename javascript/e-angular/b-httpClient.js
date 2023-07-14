@@ -81,7 +81,5 @@ export class ExampleService {
                 catchError(this.handleError('updateHero', hero))
             );
     }
-
-    
 }
 

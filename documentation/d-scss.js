@@ -1,14 +1,14 @@
-// File: _content.scss
+// File: _example.scss
 
-// Content Module
+// Example Module
 // ______________
 //
-// This module contains Typography styles, Images Styles,
-// Tables styles, and figure styles used in this application.
+// This module contains Example styles, Other Example Styles,
+// used in this application.
 
-// Typography Styles
+// Example Styles
 // --------------
-// These classes define styles for different typography elements.
+// These classes define styles for different example elements.
 
-// Class: h1
-// Description: Represents a top-level heading.
+// Class: example
+// Description: Represents a top-level example element.

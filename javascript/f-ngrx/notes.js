@@ -4,5 +4,20 @@
 
 // Angular Instalation
 
-npm install @ngrx/store @ngrx/effects @ngrx/store-devtools
+npm i @ngrx/store @ngrx/effects @ngrx/router-store @ngrx/entity @ngrx/component-store @ngrx/data @ngrx/store-devtools
 
+// add imports on @NgModule
+
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+
+@NgModule({
+    declarations: [AppComponent, MyCounterComponent],
+    imports:
+        [BrowserModule,
+        StoreModule.forRoot()], // this line here
+        EffectsModule.forRoot(), // this line here
+    providers: [],
+    bootstrap: [AppComponent],
+})
+export class AppModule { }

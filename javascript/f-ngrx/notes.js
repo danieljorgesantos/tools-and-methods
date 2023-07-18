@@ -73,5 +73,41 @@ onSubmit(username: string, password: string) {
     store.dispatch(login({ username: username, password: password }));
 }
 
+// reducer
 
+import { Action, createReducer, on } from '@ngrx/store';
+import * as ScoreboardPageActions from '../actions/scoreboard-page.actions';
+
+// state interface
+export interface State {
+  home: number;
+  away: number;
+}
+
+// Setting the initial state
+export const initialState: State = {
+  home: 0,
+  away: 0,
+};
+
+// Creating the reducer function
+export const scoreboardReducer = createReducer(
+  initialState,
+  on(ScoreboardPageActions.homeScore, state => ({ ...state, home: state.home + 1 })),
+  on(ScoreboardPageActions.awayScore, state => ({ ...state, away: state.away + 1 })),
+  on(ScoreboardPageActions.resetScore, state => ({ home: 0, away: 0 })),
+  on(ScoreboardPageActions.setScores, (state, { game }) => ({ home: game.home, away: game.away }))
+);
+
+// --------------------------------------------------------------------------
+// import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
+import { scoreboardReducer } from './reducers/scoreboard.reducer';
+
+@NgModule({
+  imports: [
+    StoreModule.forRoot({ game: scoreboardReducer })
+  ],
+})
+export class AppModule {}
 

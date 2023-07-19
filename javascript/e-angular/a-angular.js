@@ -243,3 +243,9 @@ src
 |-- angular.json
 |-- package.json
 
+ng g s shared/auth
+
+ng g guard shared/auth
+
+
+

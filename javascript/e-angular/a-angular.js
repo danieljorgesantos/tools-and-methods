@@ -249,3 +249,18 @@ ng g guard shared/auth
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+*ngFor="let item of items"
+
+
+

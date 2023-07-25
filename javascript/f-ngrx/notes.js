@@ -111,3 +111,65 @@ import { scoreboardReducer } from './reducers/scoreboard.reducer';
 })
 export class AppModule {}
 
+// chatGpt autocreate
+
+
+using the following examples between <> 
+
+<
+// User get_cart
+export const get_cart = createAction('[state_cart] get_cart');
+export const get_cart_success = createAction(
+  '[state_cart] get_cart Success',
+  props<{ payload: any }>()
+);
+export const get_cart_error = createAction('[state_cart] get_cart Error');
+
+private destroy$ = new Subject<void>();
+private serviceCalled = false;
+
+get_cart$ = createEffect(() =>
+  this.actions$.pipe(
+    ofType('[state_cart] get_cart'),
+    exhaustMap((payload: any) => {
+      if (!this.serviceCalled) {
+        this.serviceCalled = true;
+        return this.dataService.getCart(payload).pipe(
+          map((res) => get_cart_success({ payload: { ...res.data } })),
+          catchError((error) => {
+            console.error('Error getting cart:', error);
+            return of({ type: 'NO_ACTION' });
+          }),
+          takeUntil(this.destroy$)
+        );
+      } else {
+        return of({ type: 'NO_ACTION' });
+      }
+    })
+  )
+);
+
+ngOnDestroy() {
+  this.destroy$.next();
+  this.destroy$.complete();
+}
+
+on(get_cart_success, (state, action) => ({
+  ...state,
+  cart: {
+    ...state.cart,
+    ...action.payload[0]
+  }
+})),
+
+getCart(payload: any) {
+  return this.http.get<any>(this.endpoint + '/cart?user_id=1&share_token=null')
+}
+
+>
+
+do the same changing the names of the actions, effects, but for this:
+
+getList(payload: any) {
+  return this.http.get<any>(this.endpoint + '/cart/list?user_id=1')
+}
